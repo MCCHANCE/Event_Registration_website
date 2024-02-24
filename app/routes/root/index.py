@@ -1,5 +1,6 @@
 from app import app
+from flask import render_template
 
-@app.route('/home')
+@app.route("/")
 def home():
-    return "Hello MCCHANCE, please like and subscribe"
+    return render_template('root/index.html')
